@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <title>Whishlist</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Ecommerce</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="/wishlist.html">Whishlist
+                  <span id="wishlistCounter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    
+                    0
+                  </span>
+  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th></th> 
+                            <th>Product</th> 
+                            <th style="width: 40px">Quantity</th> 
+                            <th>Unit price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button class="btn btn-danger btn-sm"><span class="material-icons-outlined">delete</span></button>
+                            </td>
+                            <td>Product A</td> 
+                            <td>
+                                <input type="number" class="form-control"/>
+                            </td> 
+                            <td>100.00</td> 
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btn btn-danger btn-sm"><span class="material-icons-outlined">delete</span></button>
+                            </td>
+                            <td>Product A</td> 
+                            <td>
+                                <input type="number" class="form-control"/>
+                            </td> 
+                            <td>100.00</td> 
+                            <td>100.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total</td>
+                            <td>200.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
